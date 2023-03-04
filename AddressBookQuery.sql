@@ -26,3 +26,10 @@ insert into Address_Book values
 ---------UpdateDataUsingName-------
 update Address_Book set E_Mail = 'varshashingote@gmail.com' where First_Name = 'Varsha'
 
+
+
+---------UC5----------------
+--------DeleteRecord------------
+delete from Address_Book where First_Name = 'Aditya'
+
+
