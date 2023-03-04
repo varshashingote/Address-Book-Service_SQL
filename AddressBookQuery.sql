@@ -33,3 +33,13 @@ update Address_Book set E_Mail = 'varshashingote@gmail.com' where First_Name = '
 delete from Address_Book where First_Name = 'Aditya'
 
 
+
+-----------UC6 Revtive person details using state or city name -------
+
+select * from Address_Book where State = 'MH'
+
+
+
+
+
+
