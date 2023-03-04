@@ -40,6 +40,9 @@ select * from Address_Book where State = 'MH'
 
 
 
+--UC7 Size of Address Book----------------
+
+select Count(*) as Size_Of_Address_Book from Address_Book
 
 
 
