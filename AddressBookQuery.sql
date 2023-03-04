@@ -12,7 +12,7 @@ create Table Address_Book
 City varchar(50), State varchar(30), Zip_Code int, Phone_Number bigint, E_Mail varchar(50) )
 
 ----------UC3----------------
------------insert Record into Table-------
+-----------insert Record into Table-------ab
 insert into Address_Book values
 ('Varsha', 'Gunjal', 'primprichinchwad', 'Pune', 'Maharastra', 422324, 8788583058, 'varsha@gmail.com'),
 ('Suraj', 'shingote', 'Shirdi', 'ANGAR','Maharasta', 234567, 5678922, 'suraj@gmail.com'),
@@ -20,4 +20,9 @@ insert into Address_Book values
 ('Chaya', 'Gunjal', 'Sangamner', 'Anagr', 'MH', 422605, 41234567, 'chaya@gmail.com'),
 ('bhima', 'Gunjal', 'Sangamner', 'Anager', 'MH', 211011, 5555555555, 'Bhima@gmail.com'),
 ('Aditya', 'Gunjal', 'Sangamer', 'Anagar', 'MH', 23456789, 62345678, 'Aditya@gmail.com')
+
+
+-----------UC4-----------
+---------UpdateDataUsingName-------
+update Address_Book set E_Mail = 'varshashingote@gmail.com' where First_Name = 'Varsha'
 
