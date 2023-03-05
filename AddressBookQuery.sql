@@ -68,3 +68,11 @@ select count(AddressBook_Type) from Address_Book where AddressBook_Type = 'Famil
 
 select count(AddressBook_Type) from Address_Book where AddressBook_Type = 'friends';
 
+
+
+----------UC11-Ability to add person to both Friend and Family---------------------
+
+
+INSERT INTO Address_Book VALUES('Priya','Shinde','PMPL','Pune','Maharashtra','312425','70234651','komalp@gmail.com','Friends address book','Friends');
+INSERT INTO Address_Book VALUES('Pallavi','Patil','PMPL','Mumbai','Maharashtra','234523','9011596342','pallu@gmail.com','Family address book','Family');
+select * from Address_Book;
