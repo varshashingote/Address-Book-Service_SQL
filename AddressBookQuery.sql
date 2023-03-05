@@ -45,4 +45,7 @@ select * from Address_Book where State = 'MH'
 select Count(*) as Size_Of_Address_Book from Address_Book
 
 
+----UC8 retrive data -------------------
 
+SELECT * FROM Address_Book order By (First_Name);
+SELECT * FROM Address_Book Order BY(Last_Name);
