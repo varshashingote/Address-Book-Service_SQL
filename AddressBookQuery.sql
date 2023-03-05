@@ -49,3 +49,15 @@ select Count(*) as Size_Of_Address_Book from Address_Book
 
 SELECT * FROM Address_Book order By (First_Name);
 SELECT * FROM Address_Book Order BY(Last_Name);
+
+
+
+----------UC9-Ability to identify each Address Book with name and Type---------
+alter table Address_book  add AddressBook_Name varchar(30),AddressBook_Type varchar(30);
+update Address_Book set AddressBook_Name = 'Family address book', AddressBook_Type = 'Family' where First_Name='Varsha';
+update Address_Book set AddressBook_Name = 'Friends address book', AddressBook_Type = 'Friends' where First_Name='Suraj';
+update Address_Book set AddressBook_Name = 'Friends address book', AddressBook_Type = 'Friends' where First_Name='vasu';
+update Address_Book set AddressBook_Name = 'Family address book', AddressBook_Type = 'Family' where First_Name='Chaya';
+update Address_Book set AddressBook_Name = 'Friends address book', AddressBook_Type = 'friend' where First_Name='bhima';
+select * from Address_Book;
+
