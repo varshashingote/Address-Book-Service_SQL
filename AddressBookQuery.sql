@@ -58,6 +58,13 @@ update Address_Book set AddressBook_Name = 'Family address book', AddressBook_Ty
 update Address_Book set AddressBook_Name = 'Friends address book', AddressBook_Type = 'Friends' where First_Name='Suraj';
 update Address_Book set AddressBook_Name = 'Friends address book', AddressBook_Type = 'Friends' where First_Name='vasu';
 update Address_Book set AddressBook_Name = 'Family address book', AddressBook_Type = 'Family' where First_Name='Chaya';
-update Address_Book set AddressBook_Name = 'Friends address book', AddressBook_Type = 'friend' where First_Name='bhima';
+update Address_Book set AddressBook_Name = 'Friends address book', AddressBook_Type = 'Friends' where First_Name='bhima';
 select * from Address_Book;
+
+
+----------UC10-Ability to get number of contact persons using count type----------
+
+select count(AddressBook_Type) from Address_Book where AddressBook_Type = 'Family';
+
+select count(AddressBook_Type) from Address_Book where AddressBook_Type = 'friends';
 
